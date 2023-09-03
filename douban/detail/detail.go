@@ -7,7 +7,7 @@ import (
 
 const RegName = `<span property="v:itemreviewed">([^>]+)</span>`
 const RegDate = `<span property="v:initialReleaseDate"[^>]+>([^>]+)</span>`
-const RegIntroduce = `<span property="v:summary".*>([^</s]+)</span>`
+const RegIntroduce = `<span property="v:summary".*>([^<]+)</span>`
 
 func FetchDetail(body []byte) engine.Result {
 	detail := Detail{}
